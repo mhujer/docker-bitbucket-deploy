@@ -1,6 +1,8 @@
 FROM php:7.4.14-cli
 
 RUN apt-get update && apt-get install -y \
+        openssh-client \
+        rsync \
         git \
         unzip \
         zip \
